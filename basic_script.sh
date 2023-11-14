@@ -3,6 +3,7 @@ echo "script practice1 start"
 # 홈디렉토리 (/home/sinaehong)에서 mydir이라는 폴더 생성
 mkdir mydir
 # mydir로 이동해서 file1.txt, file2.txt 파일 생성
+cd mydir
 touch file1.txt
 touch file2.txt
 # file1.txt에는 Hello from file1 이라는 문구 입력
