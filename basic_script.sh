@@ -1,6 +1,7 @@
 # 터미널창에 script practice1 start 문구 출력
 echo "script practice1 start"
 # 홈디렉토리 (/home/sinaehong)에서 mydir이라는 폴더 생성
+cd
 mkdir mydir
 # mydir로 이동해서 file1.txt, file2.txt 파일 생성
 cd mydir
