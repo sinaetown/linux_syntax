@@ -21,6 +21,8 @@ cd home/sinaehong/sinae_dir
 cd ..
 # or
 cd ../
+# 원래 있던 폴더로 돌아가기
+cd -
 
 # 비어있는 파일 만들기 (용량 0인 파일, 이미 존재한 경우에는 수정 시간이 변경)
 touch first_file.txt
