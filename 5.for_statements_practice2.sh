@@ -11,14 +11,15 @@ if [ -d "mydir2" ]; then
 else
     mkdir mydir2
     cd mydir2
-    if [ -f "for_practice.txt" ]; then
-        rm -rf "for_practice1.txt"
-        touch for_practice1.txt
-    else
-        touch for_practice1.txt
-        for i in {1..100} 
-        do
-            echo "hello world $i" >> "for_practice1.txt"
-        done
-    fi
 fi
+if [ -f "for_practice.txt" ]; then
+    rm -rf "for_practice1.txt"
+    touch for_practice1.txt
+else
+    touch for_practice1.txt
+    for i in {1..100} 
+    do
+        echo "hello world $i" >> "for_practice1.txt"
+    done
+fi
+
