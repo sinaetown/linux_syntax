@@ -6,7 +6,10 @@ ls
 ls -l
 # + 숨김파일까지 (all + long list format)
 ls -al
-# 디렉토리 생성
+# More about options
+# -r gives a recursive listing 
+# (including the contents of all subdirectories and their subdirectories and so on)
+# -t lists the files in order of the time when they were last modified
 mkdir sinae_dir
 
 # 특정 디렉토리로 이동
@@ -17,6 +20,8 @@ cd /
 cd 
 #다시 기존의 폴더로 이동
 cd home/sinaehong/sinae_dir
+# 현재 폴더
+cd .
 # 상위 폴더로 이동
 cd ..
 # or
