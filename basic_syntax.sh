@@ -104,9 +104,16 @@ for var in objects do
     statements1
 done
 
-# file check
+# file check example
 # if [ -f "test.txt" ]; then
 #   echo "exists!"
 # else
 #   echo "does not exist!"
 # fi
+
+# grep (파일 내에서 특정 패턴이나 문자열을 검색)
+# grep [option] [pattern] [file/directory name]
+# option
+# -r : 디렉토리 내 모든 파일에서 검색 (따지지 않고)
+# -i : 대소문자 구분 없이 검색
+# -n : 라인 수 출력
