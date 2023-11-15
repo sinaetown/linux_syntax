@@ -100,7 +100,7 @@ else
 fi
 
 # for loop
-for var in objects; do
+for var in objects do
     statements1
 done
 
