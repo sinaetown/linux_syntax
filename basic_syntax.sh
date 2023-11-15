@@ -115,5 +115,22 @@ done
 # grep [option] [pattern] [file/directory name]
 # option
 # -r : 디렉토리 내 모든 파일에서 검색 (따지지 않고)
-# -i : 대소문자 구분 없이 검색
-# -n : 라인 수 출력
+# -i : 대소문자 구분 없이 검색 (ignores)
+# -n : 라인 수 출력 (number)
+# order: -rni (normally)
+
+# find (파일/디렉토리 검색해서 위치 출력)
+# 1. find를 통해서 .java로 끝나는 파일목록 listing
+# 2. grep으로 찾기
+# find [path] [option] [execution]
+# ex) find . -name "*.txt" | xargs grep -rni "hello"
+
+# option 
+# -name : 파일명으로 검색 
+# -type : 타입으로 검색 ex) -type f / -type d
+
+# execution
+# -exec, {}, \ : find로 찾은 결과에 대해 실행 명령
+# {} : find로 찾은 대상이 담기는 공간을 의미
+# \ : exec의 종료 지점
+# xargs : 입력받은 파일을 한 줄씩 읽는 것을 의미
