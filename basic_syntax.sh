@@ -88,3 +88,25 @@ head -5 first_file.txt
 # tail은 하위 n개 행 조회
 # FORM : tail -n file_name
 tail -5 first_file.txt
+
+# 제어문 
+# if-else
+if [condition1];then
+	statements1 
+elif [condition2];then
+	statements2
+else
+	statements3
+fi
+
+# for loop
+for var in objects; do
+    statements1
+done
+
+# file check
+# if [ -f "test.txt" ]; then
+#   echo "exists!"
+# else
+#   echo "does not exist!"
+# fi
