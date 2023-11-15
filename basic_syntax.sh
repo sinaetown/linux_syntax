@@ -119,6 +119,8 @@ done
 # -n : 라인 수 출력 (number)
 # order: -rni (normally)
 
+# -------------------------------------------------------------------------
+
 # find (파일/디렉토리 검색해서 위치 출력)
 # 1. find를 통해서 .java로 끝나는 파일목록 listing
 # 2. grep으로 찾기
@@ -134,3 +136,7 @@ done
 # {} : find로 찾은 대상이 담기는 공간을 의미
 # \ : exec의 종료 지점
 # xargs : 입력받은 파일을 한 줄씩 읽는 것을 의미
+ 
+# mkdir testfolder (반드시 일단 directory 만드세요!)
+# find -name "*.txt" -exec cp -r {} testfolder \;
+# find . -name "*.txt" -exec grep -rni "hello" {} \;
