@@ -13,10 +13,10 @@ cd mydir3
 
 for i in {1..100}
 do
-touch "file $i.txt"
-    for i in {1..100}
-
-    echo "hello world from file $i" >> "file $i.txt"
-
+    touch "file$i.txt"
+    for a in {1..100} 
+    do
+        echo "hello world from file $i" >> "file$i.txt"
+    done
 done
 echo "practice complete!"
